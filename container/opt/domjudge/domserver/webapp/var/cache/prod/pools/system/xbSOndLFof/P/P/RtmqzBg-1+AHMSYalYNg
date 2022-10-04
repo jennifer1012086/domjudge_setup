@@ -1,0 +1,122 @@
+<?php //App%255CController%255CAPI%255CAccountController%2523singleAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/accounts/{id}',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+            'expression' => [
+                1 => 'is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_API_READER\')',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'Returns the given account',
+            ],
+            '_context' => [
+                2 => $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/opt/domjudge/domserver/lib/vendor/nelmio/api-doc-bundle/Annotation/Model.php',
+                9 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                6 => 66,
+                9 => 977,
+                12 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => '__construct',
+                9 => 'Annotation',
+                12 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'Model',
+                9 => 'DocParser',
+                12 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Nelmio\\ApiDocBundle\\Annotation',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+            ],
+            'type' => [
+                5 => 'App\\Entity\\User',
+            ],
+            'ref' => [
+                8 => '#/components/parameters/id',
+                11 => '#/components/parameters/strict',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[8],
+        $o[11],
+    ],
+    []
+); }];

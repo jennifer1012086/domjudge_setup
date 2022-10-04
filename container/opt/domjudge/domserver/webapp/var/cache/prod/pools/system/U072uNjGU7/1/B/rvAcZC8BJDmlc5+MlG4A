@@ -1,0 +1,181 @@
+<?php //App__Entity__AuditLog__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\AuditLog',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\AuditLog',
+            ],
+            'identifier' => [
+                [
+                    'logid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'logid' => [
+                        'fieldName' => 'logid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Audit log ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'logid',
+                        'id' => true,
+                    ],
+                    'logtime' => [
+                        'fieldName' => 'logtime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Timestamp of the logentry',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'logtime',
+                    ],
+                    'cid' => [
+                        'fieldName' => 'cid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Contest ID associated to this entry',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'cid',
+                    ],
+                    'user' => [
+                        'fieldName' => 'user',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'User who performed this action',
+                        ],
+                        'columnName' => 'user',
+                    ],
+                    'datatype' => [
+                        'fieldName' => 'datatype',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Reference to DB table associated to this entry',
+                        ],
+                        'columnName' => 'datatype',
+                    ],
+                    'dataid' => [
+                        'fieldName' => 'dataid',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 64,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Identifier in reference table',
+                        ],
+                        'columnName' => 'dataid',
+                    ],
+                    'action' => [
+                        'fieldName' => 'action',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 128,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Description of action performed',
+                        ],
+                        'columnName' => 'action',
+                    ],
+                    'extrainfo' => [
+                        'fieldName' => 'extrainfo',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Optional additional description of the entry',
+                        ],
+                        'columnName' => 'extrainfo',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'logid' => 'logid',
+                    'logtime' => 'logtime',
+                    'cid' => 'cid',
+                    'user' => 'user',
+                    'datatype' => 'datatype',
+                    'dataid' => 'dataid',
+                    'action' => 'action',
+                    'extrainfo' => 'extrainfo',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'logid' => 'logid',
+                    'logtime' => 'logtime',
+                    'cid' => 'cid',
+                    'user' => 'user',
+                    'datatype' => 'datatype',
+                    'dataid' => 'dataid',
+                    'action' => 'action',
+                    'extrainfo' => 'extrainfo',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'auditlog',
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Log of all actions performed',
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

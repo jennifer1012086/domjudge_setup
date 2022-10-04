@@ -1,0 +1,162 @@
+<?php //App%255CController%255CAPI%255CGeneralInfoController%2523getInfoAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone $p['FOS\\RestBundle\\Controller\\Annotations\\Get'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/info',
+                '',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+            'name' => [
+                1 => 'api_root',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'Information about the API and DOMjudge',
+            ],
+            '_context' => [
+                2 => $o[3],
+                5 => $o[18],
+                $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                15 => $o[16],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                7 => $o[8],
+                10 => $o[11],
+                13 => $o[14],
+                16 => $o[17],
+                18 => $o[19],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                7 => 977,
+                10 => 977,
+                13 => 977,
+                16 => 977,
+                18 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                10 => 'Annotation',
+                13 => 'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                10 => 'DocParser',
+                13 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[5],
+                ],
+            ],
+            'properties' => [
+                5 => [
+                    $o[6],
+                    $o[9],
+                    $o[12],
+                    $o[15],
+                ],
+            ],
+            'type' => [
+                5 => 'object',
+                'integer',
+                9 => 'string',
+                12 => 'string',
+                15 => 'string',
+            ],
+            'property' => [
+                6 => 'api_version',
+                9 => 'domjudge_version',
+                12 => 'environment',
+                15 => 'doc_url',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

@@ -1,0 +1,177 @@
+<?php //App__Entity__ProblemAttachment__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ProblemAttachment',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ProblemAttachment',
+            ],
+            'identifier' => [
+                [
+                    'attachmentid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'attachmentid' => [
+                        'fieldName' => 'attachmentid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Attachment ID',
+                            'unsigned' => 'true',
+                        ],
+                        'id' => true,
+                        'columnName' => 'attachmentid',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Filename of attachment',
+                        ],
+                        'columnName' => 'name',
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'File type of attachment',
+                        ],
+                        'columnName' => 'type',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'attachmentid' => 'attachmentid',
+                    'name' => 'name',
+                    'type' => 'type',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'attachmentid' => 'attachmentid',
+                    'name' => 'name',
+                    'type' => 'type',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'problem_attachment',
+                    'indexes' => [
+                        'name' => [
+                            'columns' => [
+                                'attachmentid',
+                                'name',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    null,
+                                    190,
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Attachments belonging to problems',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'problem' => [
+                        'fieldName' => 'problem',
+                        'joinColumns' => [
+                            [
+                                'name' => 'probid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'probid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'attachments',
+                        'targetEntity' => 'App\\Entity\\Problem',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ProblemAttachment',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'probid' => 'probid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'probid' => 'probid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'probid' => 'probid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'content' => [
+                        'fieldName' => 'content',
+                        'mappedBy' => 'attachment',
+                        'targetEntity' => 'App\\Entity\\ProblemAttachmentContent',
+                        'cascade' => [
+                            'persist',
+                        ],
+                        'orphanRemoval' => true,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\ProblemAttachment',
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

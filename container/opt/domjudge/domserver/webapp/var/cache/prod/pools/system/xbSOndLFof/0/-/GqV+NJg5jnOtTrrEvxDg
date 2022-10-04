@@ -1,0 +1,143 @@
+<?php //App%255CController%255CAPI%255CGeneralInfoController%2523updateConfigurationAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Put')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\MediaType'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/config',
+            ],
+            'methods' => [
+                [
+                    'PUT',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_ADMIN',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'The full configuration after change',
+            ],
+            '_context' => [
+                2 => $o[3],
+                5 => $o[6],
+                8 => $o[15],
+                $o[10],
+                12 => $o[13],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                10 => $o[11],
+                13 => $o[14],
+                15 => $o[16],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                6 => 977,
+                10 => 977,
+                13 => 977,
+                15 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                10 => 'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                10 => 'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[8],
+                ],
+            ],
+            'type' => [
+                5 => 'object',
+            ],
+            'required' => [
+                8 => true,
+            ],
+            'content' => [
+                8 => [
+                    $o[9],
+                    $o[12],
+                ],
+            ],
+            'mediaType' => [
+                9 => 'application/x-www-form-urlencoded',
+                12 => 'application/json',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[8],
+    ],
+    []
+); }];

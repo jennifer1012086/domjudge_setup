@@ -1,0 +1,5 @@
+0c0cceeb0c49c123683a9f3bd4ef5592  usr/lib/nginx/modules/ngx_stream_geoip_module.so
+6d19e8bcdf9700194e0835a4d542967d  usr/share/doc/libnginx-mod-stream-geoip/changelog.Debian.gz
+ec313f76c1cd260b35897ff2101afec5  usr/share/doc/libnginx-mod-stream-geoip/changelog.gz
+541f7983ae8e9a3371b3c7a1ee5fac17  usr/share/doc/libnginx-mod-stream-geoip/copyright
+f5a2469c1908aab12778bfe0c3b1ef26  usr/share/nginx/modules-available/mod-stream-geoip.conf

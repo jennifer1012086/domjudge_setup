@@ -1,0 +1,4 @@
+/usr/lib/mime/packages mailcap/noawait
+/usr/share/applications mailcap/noawait
+/etc/php/7.4/cli/conf.d php7.4-cli/noawait
+/etc/php/7.4/fpm/conf.d php7.4-fpm/noawait

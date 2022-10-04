@@ -1,0 +1,83 @@
+<?php //App%255CController%255CAPI%255CGeneralInfoController%2523getUserAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/user',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                1 => '200',
+            ],
+            'description' => [
+                1 => 'Information about the logged in user',
+            ],
+            '_context' => [
+                1 => $o[2],
+                4 => $o[5],
+            ],
+            '_unmerged' => [
+                1 => [
+                    $o[4],
+                ],
+            ],
+            'logger' => [
+                2 => $o[3],
+                5 => $o[6],
+            ],
+            'filename' => [
+                2 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/opt/domjudge/domserver/lib/vendor/nelmio/api-doc-bundle/Annotation/Model.php',
+            ],
+            'line' => [
+                2 => 977,
+                5 => 66,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                5 => '__construct',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                5 => 'Model',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                5 => 'Nelmio\\ApiDocBundle\\Annotation',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                5 => [
+                    $o[4],
+                ],
+            ],
+            'type' => [
+                4 => 'App\\Entity\\User',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

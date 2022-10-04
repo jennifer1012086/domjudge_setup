@@ -1,0 +1,52 @@
+<?php //App%255CEntity%255CTeamAffiliation%2524country
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['JMS\\Serializer\\Annotation\\Expose'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Expose')),
+        clone ($p['App\\Validator\\Constraints\\Country'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('App\\Validator\\Constraints\\Country')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'country',
+            ],
+            'type' => [
+                'string',
+            ],
+            'length' => [
+                3,
+            ],
+            'precision' => [
+                null,
+            ],
+            'scale' => [
+                null,
+            ],
+            'nullable' => [
+                true,
+            ],
+            'options' => [
+                [
+                    'comment' => 'ISO 3166-1 alpha-3 country code',
+                    'fixed' => true,
+                ],
+            ],
+            'if' => [
+                1 => 'context.getAttribute(\'config_service\').get(\'show_flags\')',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

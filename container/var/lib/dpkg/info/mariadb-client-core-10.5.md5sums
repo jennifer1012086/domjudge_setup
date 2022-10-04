@@ -1,0 +1,6 @@
+507cba9542c8f9f871c5fc35451a4db7  usr/bin/mariadb
+c9ba1b4a8c239cdb9d33423999574ccb  usr/bin/mariadb-check
+d0ecc73e06baa7cd9291c68d34a0e98f  usr/share/doc/mariadb-client-core-10.5/changelog.Debian.gz
+ebedf022e9c3685faf5405ed9d2008f7  usr/share/doc/mariadb-client-core-10.5/copyright
+1315f54fb0922da69facb9e43cc061d4  usr/share/man/man1/mysql.1.gz
+86f8b8eda359c961831f3d4760c3628a  usr/share/man/man1/mysqlcheck.1.gz

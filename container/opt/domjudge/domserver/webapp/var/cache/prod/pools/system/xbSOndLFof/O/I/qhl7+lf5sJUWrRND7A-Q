@@ -1,0 +1,126 @@
+<?php //App%255CController%255CAPI%255CSubmissionController%2523getSubmissionFilesAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}/files',
+            ],
+            'name' => [
+                'submission_files',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_API_SOURCE_READER',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+                8 => '500',
+            ],
+            'description' => [
+                2 => 'The files for the submission as a ZIP archive',
+                8 => 'An error occurred while creating the ZIP file',
+            ],
+            'content' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            '_context' => [
+                2 => $o[6],
+                $o[4],
+                8 => $o[9],
+                11 => $o[12],
+            ],
+            'mediaType' => [
+                3 => 'application/zip',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+            ],
+            'filename' => [
+                4 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 977,
+                6 => 977,
+                9 => 977,
+                12 => 977,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+            ],
+            'ref' => [
+                11 => '#/components/parameters/id',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[8],
+        $o[11],
+    ],
+    []
+); }];

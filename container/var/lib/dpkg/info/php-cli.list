@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/share
+/usr/share/doc
+/usr/share/doc/php-cli
+/usr/share/doc/php-cli/changelog.gz
+/usr/share/doc/php-cli/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/bin/phar.default
+/usr/bin/phar.phar.default
+/usr/bin/php.default
+/usr/share/man/man1/phar.default.1.gz
+/usr/share/man/man1/phar.phar.default.1.gz
+/usr/share/man/man1/php.default.1.gz

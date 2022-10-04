@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/nginx
+/usr/lib/nginx/modules
+/usr/lib/nginx/modules/ngx_stream_geoip_module.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnginx-mod-stream-geoip
+/usr/share/doc/libnginx-mod-stream-geoip/changelog.Debian.gz
+/usr/share/doc/libnginx-mod-stream-geoip/changelog.gz
+/usr/share/doc/libnginx-mod-stream-geoip/copyright
+/usr/share/nginx
+/usr/share/nginx/modules-available
+/usr/share/nginx/modules-available/mod-stream-geoip.conf

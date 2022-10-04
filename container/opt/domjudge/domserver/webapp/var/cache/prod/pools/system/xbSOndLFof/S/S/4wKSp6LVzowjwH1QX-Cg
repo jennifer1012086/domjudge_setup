@@ -1,0 +1,160 @@
+<?php //App%255CController%255CAPI%255CProblemController%2523linkProblemAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Put')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}',
+            ],
+            'methods' => [
+                [
+                    'PUT',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_ADMIN',
+            ],
+        ],
+        'stdClass' => [
+            'required' => [
+                2 => true,
+            ],
+            'content' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            '_context' => [
+                2 => $o[9],
+                $o[7],
+                $o[5],
+                11 => $o[12],
+                14 => $o[15],
+                17 => $o[18],
+            ],
+            'mediaType' => [
+                3 => 'application/json',
+            ],
+            'schema' => [
+                3 => $o[4],
+            ],
+            'ref' => [
+                4 => '#/components/schemas/ContestProblemPut',
+                14 => '#/components/schemas/ContestProblem',
+                17 => '#/components/parameters/id',
+            ],
+            'logger' => [
+                5 => $o[6],
+                7 => $o[8],
+                9 => $o[10],
+                12 => $o[13],
+                15 => $o[16],
+                18 => $o[19],
+            ],
+            'filename' => [
+                5 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                5 => 977,
+                7 => 977,
+                9 => 977,
+                12 => 977,
+                15 => 977,
+                18 => 977,
+            ],
+            'method' => [
+                5 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                15 => 'Annotation',
+                18 => 'Annotation',
+            ],
+            'class' => [
+                5 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                18 => 'DocParser',
+            ],
+            'namespace' => [
+                5 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                5 => [
+                    $o[4],
+                ],
+                7 => [
+                    $o[3],
+                ],
+                9 => [
+                    $o[2],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                18 => [
+                    $o[17],
+                ],
+            ],
+            'response' => [
+                11 => '200',
+            ],
+            'description' => [
+                11 => 'Returns the linked problem for this contest',
+            ],
+            '_unmerged' => [
+                11 => [
+                    $o[14],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[11],
+        $o[17],
+    ],
+    []
+); }];

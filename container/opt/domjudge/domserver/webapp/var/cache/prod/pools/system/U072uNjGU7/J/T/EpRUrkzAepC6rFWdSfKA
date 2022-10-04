@@ -1,0 +1,241 @@
+<?php //App__Entity__ExternalSourceWarning__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ExternalSourceWarning',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ExternalSourceWarning',
+            ],
+            'identifier' => [
+                [
+                    'extwarningid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'extwarningid' => [
+                        'fieldName' => 'extwarningid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'External source warning ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'extwarningid',
+                        'id' => true,
+                    ],
+                    'lastEventId' => [
+                        'fieldName' => 'lastEventId',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Last event ID this warning happened at',
+                        ],
+                        'columnName' => 'last_event_id',
+                    ],
+                    'lastTime' => [
+                        'fieldName' => 'lastTime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time this warning happened last',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'time',
+                    ],
+                    'entityType' => [
+                        'fieldName' => 'entityType',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Type of the entity for this warning',
+                        ],
+                        'columnName' => 'entity_type',
+                    ],
+                    'entityId' => [
+                        'fieldName' => 'entityId',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'ID of the entity for this warning',
+                        ],
+                        'columnName' => 'entity_id',
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Type of this warning',
+                        ],
+                        'columnName' => 'type',
+                    ],
+                    'hash' => [
+                        'fieldName' => 'hash',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Hash of this warning. Unique within the source.',
+                        ],
+                        'columnName' => 'hash',
+                    ],
+                    'content' => [
+                        'fieldName' => 'content',
+                        'type' => 'json',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'JSON encoded content of the warning. Type-specific.',
+                        ],
+                        'columnName' => 'content',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'extwarningid' => 'extwarningid',
+                    'last_event_id' => 'lastEventId',
+                    'time' => 'lastTime',
+                    'entity_type' => 'entityType',
+                    'entity_id' => 'entityId',
+                    'type' => 'type',
+                    'hash' => 'hash',
+                    'content' => 'content',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'extwarningid' => 'extwarningid',
+                    'lastEventId' => 'last_event_id',
+                    'lastTime' => 'time',
+                    'entityType' => 'entity_type',
+                    'entityId' => 'entity_id',
+                    'type' => 'type',
+                    'hash' => 'hash',
+                    'content' => 'content',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'external_source_warning',
+                    'uniqueConstraints' => [
+                        'hash' => [
+                            'columns' => [
+                                'extsourceid',
+                                'hash',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    null,
+                                    190,
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Warnings for external sources',
+                    ],
+                ],
+            ],
+            'lifecycleCallbacks' => [
+                [
+                    'prePersist' => [
+                        'fillhash',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'externalContestSource' => [
+                        'fieldName' => 'externalContestSource',
+                        'joinColumns' => [
+                            [
+                                'name' => 'extsourceid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'extsourceid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'warnings',
+                        'targetEntity' => 'App\\Entity\\ExternalContestSource',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ExternalSourceWarning',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'extsourceid' => 'extsourceid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'extsourceid' => 'extsourceid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'extsourceid' => 'extsourceid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,165 @@
+<?php //App__Entity__Judgehost__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Judgehost',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Judgehost',
+            ],
+            'identifier' => [
+                [
+                    'judgehostid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'judgehostid' => [
+                        'fieldName' => 'judgehostid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Judgehost ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'judgehostid',
+                        'id' => true,
+                    ],
+                    'hostname' => [
+                        'fieldName' => 'hostname',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 64,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Resolvable hostname of judgehost',
+                        ],
+                        'columnName' => 'hostname',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Should this host take on judgings?',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'enabled',
+                    ],
+                    'polltime' => [
+                        'fieldName' => 'polltime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time of last poll by autojudger',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'polltime',
+                    ],
+                    'hidden' => [
+                        'fieldName' => 'hidden',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Should this host be hidden in the overview?',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'hidden',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'judgehostid' => 'judgehostid',
+                    'hostname' => 'hostname',
+                    'enabled' => 'enabled',
+                    'polltime' => 'polltime',
+                    'hidden' => 'hidden',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'judgehostid' => 'judgehostid',
+                    'hostname' => 'hostname',
+                    'enabled' => 'enabled',
+                    'polltime' => 'polltime',
+                    'hidden' => 'hidden',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'judgehost',
+                    'uniqueConstraints' => [
+                        'hostname' => [
+                            'columns' => [
+                                'hostname',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Hostnames of the autojudgers',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'judgetasks' => [
+                        'fieldName' => 'judgetasks',
+                        'mappedBy' => 'judgehost',
+                        'targetEntity' => 'App\\Entity\\JudgeTask',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Judgehost',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

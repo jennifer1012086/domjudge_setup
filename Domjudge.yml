@@ -1,0 +1,68 @@
+version: '3'
+
+services:
+        dj-mariadb:
+                image: mariadb:10.7
+                networks:
+                        - dj-db
+                environment:
+                        - MYSQL_ROOT_PASSWORD=rootpw
+                        - MYSQL_DATABASE=domjudge
+                        - MYSQL_USER=domjudge
+                        - MYSQL_PASSWORD=djpw
+                command:
+                        --max-connections=1000
+        
+        dj-domserver:
+                image: domjudge/domserver:8.1.3
+                volumes:
+                        - /sys/fs/cgroup:/sys/fs/cgroup:ro
+                        - /home/jennifer/Desktop/Domjudge/container/opt:/opt
+                networks:
+                        dj-db:
+                        dj-judgedaemons:
+                environment:
+                        - CONTAINER_TIMEZONE=Asia/Taipei
+                        - MYSQL_ROOT_PASSWORD=rootpw
+                        - MYSQL_DATABASE=domjudge
+                        - MYSQL_USER=domjudge
+                        - MYSQL_PASSWORD=djpw
+                ports:
+                        - 9090:80
+                links:
+                        - dj-mariadb:mariadb
+
+        dj-judgehost:
+                image: domjudge/judgehost:8.1.3
+                privileged: true
+                hostname: judgedaemon-0
+                volumes:
+                        - /sys/fs/cgroup:/sys/fs/cgroup:ro
+                        - /home/jennifer/Desktop/Domjudge/container/opt:/opt
+                networks:
+                        - dj-judgedaemons
+                environment:
+                        - DAEMON_ID=0
+                        - JUDGEDAEMON_PASSWORD=domjudge
+                links:
+                        - dj-domserver:domserver
+        phpmyadmin:
+                image: phpmyadmin/phpmyadmin:5.2.0
+                container_name: phpmyadmin
+                ports:
+                        - 9992:80
+                networks: 
+                        - dj-db
+                environment:
+                        - PMA_ARBITRARY=1
+                        - PMA_HOST=dj-mariadb
+                links:
+                        - dj-mariadb:db
+
+networks:
+        default:
+        dj-db:
+                driver: bridge
+        dj-judgedaemons:
+                driver: bridge
+

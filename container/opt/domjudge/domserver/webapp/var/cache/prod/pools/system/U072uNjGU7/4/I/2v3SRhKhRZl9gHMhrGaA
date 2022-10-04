@@ -1,0 +1,238 @@
+<?php //App__Entity__ExternalContestSource__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ExternalContestSource',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ExternalContestSource',
+            ],
+            'identifier' => [
+                [
+                    'extsourceid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'extsourceid' => [
+                        'fieldName' => 'extsourceid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'External contest source ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'extsourceid',
+                        'id' => true,
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Is this contest source currently enabled?',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'enabled',
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Type of this contest source',
+                        ],
+                        'columnName' => 'type',
+                    ],
+                    'source' => [
+                        'fieldName' => 'source',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Source for this contest',
+                        ],
+                        'columnName' => 'source',
+                    ],
+                    'username' => [
+                        'fieldName' => 'username',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Username for this source, if any',
+                        ],
+                        'columnName' => 'username',
+                    ],
+                    'password' => [
+                        'fieldName' => 'password',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Password for this source, if any',
+                        ],
+                        'columnName' => 'password',
+                    ],
+                    'lastEventId' => [
+                        'fieldName' => 'lastEventId',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Last encountered event ID, if any',
+                        ],
+                        'columnName' => 'last_event_id',
+                    ],
+                    'lastPollTime' => [
+                        'fieldName' => 'lastPollTime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time of last poll by event feed reader',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'last_poll_time',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'extsourceid' => 'extsourceid',
+                    'enabled' => 'enabled',
+                    'type' => 'type',
+                    'source' => 'source',
+                    'username' => 'username',
+                    'password' => 'password',
+                    'last_event_id' => 'lastEventId',
+                    'last_poll_time' => 'lastPollTime',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'extsourceid' => 'extsourceid',
+                    'enabled' => 'enabled',
+                    'type' => 'type',
+                    'source' => 'source',
+                    'username' => 'username',
+                    'password' => 'password',
+                    'lastEventId' => 'last_event_id',
+                    'lastPollTime' => 'last_poll_time',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'external_contest_source',
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Sources for external contests',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'contest' => [
+                        'fieldName' => 'contest',
+                        'joinColumns' => [
+                            [
+                                'name' => 'cid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'cid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'externalContestSources',
+                        'targetEntity' => 'App\\Entity\\Contest',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ExternalContestSource',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'cid' => 'cid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'cid' => 'cid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'cid' => 'cid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'warnings' => [
+                        'fieldName' => 'warnings',
+                        'mappedBy' => 'externalContestSource',
+                        'targetEntity' => 'App\\Entity\\ExternalSourceWarning',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\ExternalContestSource',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

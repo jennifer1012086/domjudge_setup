@@ -1,0 +1,133 @@
+<?php //App%255CController%255CAPI%255CTeamController%2523photoAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Annotations\\MediaType'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\MediaType'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}/photo',
+            ],
+            'name' => [
+                'team_photo',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                1 => '200',
+            ],
+            'description' => [
+                1 => 'Returns the given team photo in PNG, JPG or SVG format',
+            ],
+            'content' => [
+                1 => [
+                    $o[2],
+                    $o[5],
+                    $o[8],
+                ],
+            ],
+            '_context' => [
+                1 => $o[11],
+                $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                13 => $o[14],
+            ],
+            'mediaType' => [
+                2 => 'image/png',
+                5 => 'image/jpeg',
+                8 => 'image/svg+xml',
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                11 => $o[12],
+                14 => $o[15],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                6 => 977,
+                9 => 977,
+                11 => 977,
+                14 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                11 => 'Annotation',
+                14 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                11 => 'DocParser',
+                14 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[1],
+                ],
+                14 => [
+                    $o[13],
+                ],
+            ],
+            'ref' => [
+                13 => '#/components/parameters/id',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[13],
+    ],
+    []
+); }];

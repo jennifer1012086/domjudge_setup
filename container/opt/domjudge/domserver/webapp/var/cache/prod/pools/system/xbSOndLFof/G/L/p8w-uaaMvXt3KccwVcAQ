@@ -1,0 +1,177 @@
+<?php //App%255CController%255CAPI%255CGeneralInfoController%2523getStatusAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/status',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_API_READER',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'General status information for the currently active contests',
+            ],
+            '_context' => [
+                2 => $o[3],
+                5 => $o[21],
+                $o[19],
+                $o[8],
+                10 => $o[11],
+                13 => $o[14],
+                16 => $o[17],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                8 => $o[9],
+                11 => $o[12],
+                14 => $o[15],
+                17 => $o[18],
+                19 => $o[20],
+                21 => $o[22],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                19 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                21 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                8 => 977,
+                11 => 977,
+                14 => 977,
+                17 => 977,
+                19 => 977,
+                21 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                8 => 'Annotation',
+                11 => 'Annotation',
+                14 => 'Annotation',
+                17 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                8 => 'DocParser',
+                11 => 'DocParser',
+                14 => 'DocParser',
+                17 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                19 => 'Doctrine\\Common\\Annotations',
+                21 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                19 => [
+                    $o[6],
+                ],
+                21 => [
+                    $o[5],
+                ],
+            ],
+            'type' => [
+                5 => 'array',
+                'object',
+                'integer',
+                10 => 'integer',
+                13 => 'integer',
+                16 => 'integer',
+            ],
+            'items' => [
+                5 => $o[6],
+            ],
+            'properties' => [
+                6 => [
+                    $o[7],
+                    $o[10],
+                    $o[13],
+                    $o[16],
+                ],
+            ],
+            'property' => [
+                7 => 'cid',
+                10 => 'num_submissions',
+                13 => 'num_queued',
+                16 => 'num_judging',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

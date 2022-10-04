@@ -1,0 +1,218 @@
+<?php //App__Entity__ExecutableFile__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ExecutableFile',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ExecutableFile',
+            ],
+            'identifier' => [
+                [
+                    'execfileid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'execfileid' => [
+                        'fieldName' => 'execfileid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Executable file ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'execfileid',
+                        'id' => true,
+                    ],
+                    'filename' => [
+                        'fieldName' => 'filename',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Filename as uploaded',
+                        ],
+                        'columnName' => 'filename',
+                    ],
+                    'rank' => [
+                        'fieldName' => 'rank',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Order of the executable files, zero-indexed',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'ranknumber',
+                    ],
+                    'fileContent' => [
+                        'fieldName' => 'fileContent',
+                        'type' => 'blobtext',
+                        'scale' => null,
+                        'length' => 4294967295,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Full file content',
+                        ],
+                        'columnName' => 'file_content',
+                    ],
+                    'hash' => [
+                        'fieldName' => 'hash',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'hash of the content',
+                        ],
+                        'columnName' => 'hash',
+                    ],
+                    'isExecutable' => [
+                        'fieldName' => 'isExecutable',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Whether this file gets an executable bit.',
+                            'default' => '0',
+                        ],
+                        'columnName' => 'is_executable',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'execfileid' => 'execfileid',
+                    'filename' => 'filename',
+                    'ranknumber' => 'rank',
+                    'file_content' => 'fileContent',
+                    'hash' => 'hash',
+                    'is_executable' => 'isExecutable',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'execfileid' => 'execfileid',
+                    'filename' => 'filename',
+                    'rank' => 'ranknumber',
+                    'fileContent' => 'file_content',
+                    'hash' => 'hash',
+                    'isExecutable' => 'is_executable',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'executable_file',
+                    'indexes' => [
+                        'immutable_execid' => [
+                            'columns' => [
+                                'immutable_execid',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'rankindex' => [
+                            'columns' => [
+                                'immutable_execid',
+                                'ranknumber',
+                            ],
+                        ],
+                        'filename' => [
+                            'columns' => [
+                                'immutable_execid',
+                                'filename',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    null,
+                                    190,
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Files associated to an executable',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'immutableExecutable' => [
+                        'fieldName' => 'immutableExecutable',
+                        'joinColumns' => [
+                            [
+                                'name' => 'immutable_execid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'immutable_execid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'files',
+                        'targetEntity' => 'App\\Entity\\ImmutableExecutable',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ExecutableFile',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'immutable_execid' => 'immutable_execid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'immutable_execid' => 'immutable_execid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'immutable_execid' => 'immutable_execid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,162 @@
+<?php //App%255CController%255CAPI%255COrganizationController%2523singleAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                1 => '200',
+            ],
+            'description' => [
+                1 => 'Returns the given organization for this contest',
+            ],
+            '_context' => [
+                1 => $o[2],
+                4 => $o[14],
+                $o[9],
+                $o[7],
+                11 => $o[12],
+                16 => $o[17],
+                19 => $o[20],
+            ],
+            '_unmerged' => [
+                1 => [
+                    $o[4],
+                ],
+            ],
+            'logger' => [
+                2 => $o[3],
+                7 => $o[8],
+                9 => $o[10],
+                12 => $o[13],
+                14 => $o[15],
+                17 => $o[18],
+                20 => $o[21],
+            ],
+            'filename' => [
+                2 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/opt/domjudge/domserver/lib/vendor/nelmio/api-doc-bundle/Annotation/Model.php',
+                9 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                2 => 977,
+                7 => 66,
+                9 => 977,
+                12 => 977,
+                14 => 977,
+                17 => 977,
+                20 => 977,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                7 => '__construct',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+                17 => 'Annotation',
+                20 => 'Annotation',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                7 => 'Model',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+                17 => 'DocParser',
+                20 => 'DocParser',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                7 => 'Nelmio\\ApiDocBundle\\Annotation',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[5],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[4],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                20 => [
+                    $o[19],
+                ],
+            ],
+            'allOf' => [
+                4 => [
+                    $o[5],
+                    $o[11],
+                ],
+            ],
+            'ref' => [
+                5 => $o[6],
+                11 => '#/components/schemas/Logo',
+                16 => '#/components/parameters/id',
+                19 => '#/components/parameters/strict',
+            ],
+            'type' => [
+                6 => 'App\\Entity\\TeamAffiliation',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[16],
+        $o[19],
+    ],
+    []
+); }];

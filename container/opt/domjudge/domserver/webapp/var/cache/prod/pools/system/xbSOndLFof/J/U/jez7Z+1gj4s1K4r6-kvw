@@ -1,0 +1,223 @@
+<?php //App%255CController%255CAPI%255CContestController%2523changeStartTimeAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Patch'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Patch')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{cid}',
+            ],
+            'methods' => [
+                [
+                    'PATCH',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_API_WRITER',
+            ],
+        ],
+        'stdClass' => [
+            'name' => [
+                2 => 'cid',
+            ],
+            'in' => [
+                2 => 'path',
+            ],
+            'description' => [
+                2 => 'The ID of the contest to change the start time for',
+                11 => 'The ID of the contest to change the start time for',
+                14 => 'The new start time of the contest',
+                23 => 'Contest start time changed successfully',
+                26 => 'Changing start time not allowed',
+            ],
+            'schema' => [
+                2 => $o[3],
+                9 => $o[10],
+            ],
+            '_context' => [
+                2 => $o[6],
+                $o[4],
+                8 => $o[21],
+                $o[19],
+                $o[17],
+                $o[12],
+                14 => $o[15],
+                23 => $o[24],
+                26 => $o[27],
+            ],
+            'type' => [
+                3 => 'string',
+                11 => 'string',
+                14 => 'string',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                12 => $o[13],
+                15 => $o[16],
+                17 => $o[18],
+                19 => $o[20],
+                21 => $o[22],
+                24 => $o[25],
+                27 => $o[28],
+            ],
+            'filename' => [
+                4 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                19 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                21 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                24 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                27 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                4 => 977,
+                6 => 977,
+                12 => 977,
+                15 => 977,
+                17 => 977,
+                19 => 977,
+                21 => 977,
+                24 => 977,
+                27 => 977,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                12 => 'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+                24 => 'Annotation',
+                27 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+                24 => 'DocParser',
+                27 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                19 => 'Doctrine\\Common\\Annotations',
+                21 => 'Doctrine\\Common\\Annotations',
+                24 => 'Doctrine\\Common\\Annotations',
+                27 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[10],
+                ],
+                19 => [
+                    $o[9],
+                ],
+                21 => [
+                    $o[8],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                27 => [
+                    $o[26],
+                ],
+            ],
+            'required' => [
+                8 => true,
+                10 => [
+                    'id',
+                ],
+            ],
+            'content' => [
+                8 => [
+                    $o[9],
+                ],
+            ],
+            'mediaType' => [
+                9 => 'application/x-www-form-urlencoded',
+            ],
+            'properties' => [
+                10 => [
+                    $o[11],
+                    $o[14],
+                ],
+            ],
+            'property' => [
+                11 => 'id',
+                14 => 'start_time',
+            ],
+            'format' => [
+                14 => 'date-time',
+            ],
+            'response' => [
+                23 => '200',
+                26 => '403',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[8],
+        $o[23],
+        $o[26],
+    ],
+    []
+); }];

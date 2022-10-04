@@ -1,0 +1,33 @@
+<?php //App%255CEntity%255CExecutableFile%2524immutableExecutable
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+        clone ($p['Doctrine\\ORM\\Mapping\\JoinColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\JoinColumn')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'targetEntity' => [
+                'ImmutableExecutable',
+            ],
+            'inversedBy' => [
+                'files',
+            ],
+            'name' => [
+                1 => 'immutable_execid',
+            ],
+            'referencedColumnName' => [
+                1 => 'immutable_execid',
+            ],
+            'onDelete' => [
+                1 => 'CASCADE',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

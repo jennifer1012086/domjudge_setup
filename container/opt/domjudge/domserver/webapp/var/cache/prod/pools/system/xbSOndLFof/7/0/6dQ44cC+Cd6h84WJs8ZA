@@ -1,0 +1,3 @@
+<?php //App%255CController%255CJury%255CExecutableController%2523dataForEditor
+
+return [PHP_INT_MAX, []];

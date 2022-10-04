@@ -1,0 +1,220 @@
+<?php //App%255CController%255CAPI%255CClarificationController%2523addAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone $p['FOS\\RestBundle\\Controller\\Annotations\\Post'],
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Put')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Put')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\MediaType'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '',
+                '/',
+                '/{id}',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+                [
+                    'POST',
+                ],
+                [
+                    'PUT',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            '_context' => [
+                3 => $o[4],
+                6 => $o[7],
+                10 => $o[23],
+                $o[15],
+                $o[13],
+                17 => $o[21],
+                $o[19],
+                25 => $o[26],
+                28 => $o[29],
+            ],
+            'logger' => [
+                4 => $o[5],
+                7 => $o[8],
+                13 => $o[14],
+                15 => $o[16],
+                19 => $o[20],
+                21 => $o[22],
+                23 => $o[24],
+                26 => $o[27],
+                29 => $o[30],
+            ],
+            'filename' => [
+                4 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                7 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                13 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                19 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                21 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                23 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                26 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                29 => '/opt/domjudge/domserver/lib/vendor/nelmio/api-doc-bundle/Annotation/Model.php',
+            ],
+            'line' => [
+                4 => 977,
+                7 => 977,
+                13 => 977,
+                15 => 977,
+                19 => 977,
+                21 => 977,
+                23 => 977,
+                26 => 977,
+                29 => 66,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+                23 => 'Annotation',
+                26 => 'Annotation',
+                29 => '__construct',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+                23 => 'DocParser',
+                26 => 'DocParser',
+                29 => 'Model',
+            ],
+            'namespace' => [
+                4 => 'Doctrine\\Common\\Annotations',
+                7 => 'Doctrine\\Common\\Annotations',
+                13 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                19 => 'Doctrine\\Common\\Annotations',
+                21 => 'Doctrine\\Common\\Annotations',
+                23 => 'Doctrine\\Common\\Annotations',
+                26 => 'Doctrine\\Common\\Annotations',
+                29 => 'Nelmio\\ApiDocBundle\\Annotation',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[11],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                21 => [
+                    $o[17],
+                ],
+                23 => [
+                    $o[10],
+                ],
+                26 => [
+                    $o[25],
+                ],
+                29 => [
+                    $o[28],
+                ],
+            ],
+            'required' => [
+                10 => true,
+            ],
+            'content' => [
+                10 => [
+                    $o[11],
+                    $o[17],
+                ],
+            ],
+            'mediaType' => [
+                11 => 'multipart/form-data',
+                17 => 'application/json',
+            ],
+            'schema' => [
+                11 => $o[12],
+                17 => $o[18],
+            ],
+            'ref' => [
+                12 => '#/components/schemas/ClarificationPost',
+                18 => '#/components/schemas/ClarificationPost',
+            ],
+            'response' => [
+                25 => '200',
+            ],
+            'description' => [
+                25 => 'When creating a clarification was successful',
+            ],
+            '_unmerged' => [
+                25 => [
+                    $o[28],
+                ],
+            ],
+            'type' => [
+                28 => 'App\\Entity\\Clarification',
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+            'expression' => [
+                9 => 'is_granted(\'ROLE_TEAM\') or is_granted(\'ROLE_API_WRITER\')',
+            ],
+            'message' => [
+                9 => 'You need to have the Team Member role to add a clarification',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[6],
+        $o[9],
+        $o[10],
+        $o[25],
+    ],
+    []
+); }];

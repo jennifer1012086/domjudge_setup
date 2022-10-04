@@ -1,0 +1,115 @@
+<?php //App%255CController%255CAPI%255CGroupController%2523singleAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                1 => '200',
+            ],
+            'description' => [
+                1 => 'Returns the given group for this contest',
+            ],
+            '_context' => [
+                1 => $o[2],
+                4 => $o[5],
+                7 => $o[8],
+                10 => $o[11],
+            ],
+            '_unmerged' => [
+                1 => [
+                    $o[4],
+                ],
+            ],
+            'logger' => [
+                2 => $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+            ],
+            'filename' => [
+                2 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/opt/domjudge/domserver/lib/vendor/nelmio/api-doc-bundle/Annotation/Model.php',
+                8 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                2 => 977,
+                5 => 66,
+                8 => 977,
+                11 => 977,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                5 => '__construct',
+                8 => 'Annotation',
+                11 => 'Annotation',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                5 => 'Model',
+                8 => 'DocParser',
+                11 => 'DocParser',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                5 => 'Nelmio\\ApiDocBundle\\Annotation',
+                8 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                11 => [
+                    $o[10],
+                ],
+            ],
+            'type' => [
+                4 => 'App\\Entity\\TeamCategory',
+            ],
+            'ref' => [
+                7 => '#/components/parameters/id',
+                10 => '#/components/parameters/strict',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[7],
+        $o[10],
+    ],
+    []
+); }];

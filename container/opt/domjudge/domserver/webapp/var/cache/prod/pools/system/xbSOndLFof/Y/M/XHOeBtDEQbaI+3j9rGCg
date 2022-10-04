@@ -1,0 +1,181 @@
+<?php //App%255CController%255CAPI%255CTeamController%2523setPhotoAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Put')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{id}/photo',
+                '/{id}/photo',
+            ],
+            'name' => [
+                'post_team_photo',
+                'put_team_photo',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+                [
+                    'PUT',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            'required' => [
+                2 => true,
+                4 => [
+                    'photo',
+                ],
+            ],
+            'content' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            '_context' => [
+                2 => $o[12],
+                $o[10],
+                $o[8],
+                $o[6],
+                15 => $o[16],
+                18 => $o[19],
+            ],
+            'mediaType' => [
+                3 => 'multipart/form-data',
+            ],
+            'schema' => [
+                3 => $o[4],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                ],
+            ],
+            'property' => [
+                5 => 'photo',
+            ],
+            'description' => [
+                5 => 'The photo to use.',
+                15 => 'Setting photo succeeded',
+            ],
+            'type' => [
+                5 => 'string',
+            ],
+            'format' => [
+                5 => 'binary',
+            ],
+            'logger' => [
+                6 => $o[7],
+                8 => $o[9],
+                10 => $o[11],
+                12 => $o[13],
+                16 => $o[17],
+                19 => $o[20],
+            ],
+            'filename' => [
+                6 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                19 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                6 => 977,
+                8 => 977,
+                10 => 977,
+                12 => 977,
+                16 => 977,
+                19 => 977,
+            ],
+            'method' => [
+                6 => 'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                16 => 'Annotation',
+                19 => 'Annotation',
+            ],
+            'class' => [
+                6 => 'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                16 => 'DocParser',
+                19 => 'DocParser',
+            ],
+            'namespace' => [
+                6 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                19 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[4],
+                ],
+                10 => [
+                    $o[3],
+                ],
+                12 => [
+                    $o[2],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                19 => [
+                    $o[18],
+                ],
+            ],
+            'response' => [
+                15 => '204',
+            ],
+            'ref' => [
+                18 => '#/components/parameters/id',
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                14 => 'ROLE_ADMIN',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[14],
+        $o[15],
+        $o[18],
+    ],
+    []
+); }];

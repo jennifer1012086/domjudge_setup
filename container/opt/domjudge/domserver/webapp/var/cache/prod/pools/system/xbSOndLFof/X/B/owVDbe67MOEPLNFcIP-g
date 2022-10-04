@@ -1,0 +1,3 @@
+<?php //App%255CEntity%255CBaseApiEntity%2523getApiId
+
+return [PHP_INT_MAX, []];

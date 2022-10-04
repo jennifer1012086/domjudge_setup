@@ -1,0 +1,183 @@
+<?php //App%255CController%255CAPI%255CUserController%2523addTeamsAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Post')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/teams',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_ADMIN',
+            ],
+        ],
+        'stdClass' => [
+            '_context' => [
+                2 => $o[3],
+                5 => $o[18],
+                $o[16],
+                $o[14],
+                $o[9],
+                11 => $o[12],
+                20 => $o[21],
+            ],
+            'logger' => [
+                3 => $o[4],
+                9 => $o[10],
+                12 => $o[13],
+                14 => $o[15],
+                16 => $o[17],
+                18 => $o[19],
+                21 => $o[22],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                9 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                21 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                9 => 977,
+                12 => 977,
+                14 => 977,
+                16 => 977,
+                18 => 977,
+                21 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+                21 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                21 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                9 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+                21 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[7],
+                ],
+                16 => [
+                    $o[6],
+                ],
+                18 => [
+                    $o[5],
+                ],
+                21 => [
+                    $o[20],
+                ],
+            ],
+            'required' => [
+                5 => true,
+            ],
+            'content' => [
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'mediaType' => [
+                6 => 'multipart/form-data',
+            ],
+            'schema' => [
+                6 => $o[7],
+            ],
+            'properties' => [
+                7 => [
+                    $o[8],
+                    $o[11],
+                ],
+            ],
+            'property' => [
+                8 => 'tsv',
+                11 => 'json',
+            ],
+            'description' => [
+                8 => 'The teams.tsv files to import.',
+                11 => 'The teams.json files to import.',
+                20 => 'Returns a (currently meaningless) status message.',
+            ],
+            'type' => [
+                8 => 'string',
+                11 => 'string',
+            ],
+            'format' => [
+                8 => 'binary',
+                11 => 'binary',
+            ],
+            'response' => [
+                20 => '200',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[5],
+        $o[20],
+    ],
+    []
+); }];

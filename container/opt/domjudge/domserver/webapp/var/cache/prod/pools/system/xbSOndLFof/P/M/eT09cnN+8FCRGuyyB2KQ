@@ -1,0 +1,236 @@
+<?php //App%255CController%255CAPI%255CJudgehostController%2523updateJudgeHostAction
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['FOS\\RestBundle\\Controller\\Annotations\\Put'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Put')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone ($p['Nelmio\\ApiDocBundle\\Annotation\\Model'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Nelmio\\ApiDocBundle\\Annotation\\Model')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/{hostname}',
+            ],
+            'methods' => [
+                [
+                    'PUT',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\IsGranted' => [
+            'attributes' => [
+                1 => 'ROLE_JUDGEHOST',
+            ],
+        ],
+        'stdClass' => [
+            'response' => [
+                2 => '200',
+            ],
+            'description' => [
+                2 => 'The modified judgehost',
+                14 => 'The hostname of the judgehost to update',
+                23 => 'The new enabled state of the judgehost',
+            ],
+            '_context' => [
+                2 => $o[3],
+                5 => $o[12],
+                $o[10],
+                $o[8],
+                14 => $o[18],
+                $o[16],
+                20 => $o[30],
+                $o[28],
+                $o[26],
+                $o[24],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                8 => $o[9],
+                10 => $o[11],
+                12 => $o[13],
+                16 => $o[17],
+                18 => $o[19],
+                24 => $o[25],
+                26 => $o[27],
+                28 => $o[29],
+                30 => $o[31],
+            ],
+            'filename' => [
+                3 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/opt/domjudge/domserver/lib/vendor/nelmio/api-doc-bundle/Annotation/Model.php',
+                10 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                16 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                18 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                24 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                26 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                28 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                30 => '/opt/domjudge/domserver/lib/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 977,
+                8 => 66,
+                10 => 977,
+                12 => 977,
+                16 => 977,
+                18 => 977,
+                24 => 977,
+                26 => 977,
+                28 => 977,
+                30 => 977,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                8 => '__construct',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+                24 => 'Annotation',
+                26 => 'Annotation',
+                28 => 'Annotation',
+                30 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                8 => 'Model',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                24 => 'DocParser',
+                26 => 'DocParser',
+                28 => 'DocParser',
+                30 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                8 => 'Nelmio\\ApiDocBundle\\Annotation',
+                10 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                16 => 'Doctrine\\Common\\Annotations',
+                18 => 'Doctrine\\Common\\Annotations',
+                24 => 'Doctrine\\Common\\Annotations',
+                26 => 'Doctrine\\Common\\Annotations',
+                28 => 'Doctrine\\Common\\Annotations',
+                30 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[6],
+                ],
+                12 => [
+                    $o[5],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[14],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                26 => [
+                    $o[22],
+                ],
+                28 => [
+                    $o[21],
+                ],
+                30 => [
+                    $o[20],
+                ],
+            ],
+            'type' => [
+                5 => 'array',
+                7 => 'App\\Entity\\Judgehost',
+                15 => 'string',
+                23 => 'boolean',
+            ],
+            'items' => [
+                5 => $o[6],
+            ],
+            'ref' => [
+                6 => $o[7],
+            ],
+            'name' => [
+                14 => 'hostname',
+            ],
+            'in' => [
+                14 => 'path',
+            ],
+            'schema' => [
+                14 => $o[15],
+                21 => $o[22],
+            ],
+            'required' => [
+                20 => true,
+            ],
+            'content' => [
+                20 => [
+                    $o[21],
+                ],
+            ],
+            'mediaType' => [
+                21 => 'application/x-www-form-urlencoded',
+            ],
+            'properties' => [
+                22 => [
+                    $o[23],
+                ],
+            ],
+            'property' => [
+                23 => 'enabled',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[14],
+        $o[20],
+    ],
+    []
+); }];

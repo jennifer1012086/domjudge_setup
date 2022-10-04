@@ -1,0 +1,366 @@
+<?php //App__Entity__User__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\User',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\User',
+            ],
+            'identifier' => [
+                [
+                    'userid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'userid' => [
+                        'fieldName' => 'userid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'User ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'userid',
+                        'id' => true,
+                    ],
+                    'externalid' => [
+                        'fieldName' => 'externalid',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'User ID in an external system',
+                            'collation' => 'utf8mb4_bin',
+                        ],
+                        'columnName' => 'externalid',
+                    ],
+                    'username' => [
+                        'fieldName' => 'username',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'User login name',
+                        ],
+                        'columnName' => 'username',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Name',
+                        ],
+                        'columnName' => 'name',
+                    ],
+                    'email' => [
+                        'fieldName' => 'email',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Email address',
+                        ],
+                        'columnName' => 'email',
+                    ],
+                    'last_login' => [
+                        'fieldName' => 'last_login',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time of last successful login',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'last_login',
+                    ],
+                    'first_login' => [
+                        'fieldName' => 'first_login',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time of first login',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'first_login',
+                    ],
+                    'last_ip_address' => [
+                        'fieldName' => 'last_ip_address',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Last IP address of successful login',
+                        ],
+                        'columnName' => 'last_ip_address',
+                    ],
+                    'password' => [
+                        'fieldName' => 'password',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Password hash',
+                        ],
+                        'columnName' => 'password',
+                    ],
+                    'ipAddress' => [
+                        'fieldName' => 'ipAddress',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'IP Address used to autologin',
+                        ],
+                        'columnName' => 'ip_address',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Whether the user is able to log in',
+                            'default' => '1',
+                        ],
+                        'columnName' => 'enabled',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'userid' => 'userid',
+                    'externalid' => 'externalid',
+                    'username' => 'username',
+                    'name' => 'name',
+                    'email' => 'email',
+                    'last_login' => 'last_login',
+                    'first_login' => 'first_login',
+                    'last_ip_address' => 'last_ip_address',
+                    'password' => 'password',
+                    'ip_address' => 'ipAddress',
+                    'enabled' => 'enabled',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'userid' => 'userid',
+                    'externalid' => 'externalid',
+                    'username' => 'username',
+                    'name' => 'name',
+                    'email' => 'email',
+                    'last_login' => 'last_login',
+                    'first_login' => 'first_login',
+                    'last_ip_address' => 'last_ip_address',
+                    'password' => 'password',
+                    'ipAddress' => 'ip_address',
+                    'enabled' => 'enabled',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'user',
+                    'indexes' => [
+                        'teamid' => [
+                            'columns' => [
+                                'teamid',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'username' => [
+                            'columns' => [
+                                'username',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    190,
+                                ],
+                            ],
+                        ],
+                        'externalid' => [
+                            'columns' => [
+                                'externalid',
+                            ],
+                            'options' => [
+                                'lengths' => [
+                                    190,
+                                ],
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Users that have access to DOMjudge',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'team' => [
+                        'fieldName' => 'team',
+                        'joinColumns' => [
+                            [
+                                'name' => 'teamid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'teamid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'users',
+                        'targetEntity' => 'App\\Entity\\Team',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\User',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'user_roles' => [
+                        'fieldName' => 'user_roles',
+                        'joinTable' => [
+                            'name' => 'userrole',
+                            'schema' => null,
+                            'joinColumns' => [
+                                [
+                                    'name' => 'userid',
+                                    'unique' => false,
+                                    'nullable' => true,
+                                    'onDelete' => 'CASCADE',
+                                    'columnDefinition' => null,
+                                    'referencedColumnName' => 'userid',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'roleid',
+                                    'unique' => false,
+                                    'nullable' => true,
+                                    'onDelete' => 'CASCADE',
+                                    'columnDefinition' => null,
+                                    'referencedColumnName' => 'roleid',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Role',
+                        'mappedBy' => null,
+                        'inversedBy' => 'users',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\User',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'userid',
+                            'roleid',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'userid' => 'userid',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'roleid' => 'roleid',
+                        ],
+                    ],
+                    'submissions' => [
+                        'fieldName' => 'submissions',
+                        'mappedBy' => 'user',
+                        'targetEntity' => 'App\\Entity\\Submission',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\User',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

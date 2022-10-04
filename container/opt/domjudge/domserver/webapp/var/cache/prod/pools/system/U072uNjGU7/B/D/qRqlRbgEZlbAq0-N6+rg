@@ -1,0 +1,210 @@
+<?php //App__Entity__QueueTask__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\QueueTask',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\QueueTask',
+            ],
+            'identifier' => [
+                [
+                    'queuetaskid',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'queuetaskid' => [
+                        'fieldName' => 'queuetaskid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Queuetask ID',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'queuetaskid',
+                        'id' => true,
+                    ],
+                    'jobid' => [
+                        'fieldName' => 'jobid',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'All queuetasks with the same jobid belong together.',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'jobid',
+                    ],
+                    'priority' => [
+                        'fieldName' => 'priority',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Priority; negative means higher priority',
+                            'unsigned' => false,
+                        ],
+                        'columnName' => 'priority',
+                    ],
+                    'teamPriority' => [
+                        'fieldName' => 'teamPriority',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => 4,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'comment' => 'Team Priority; somewhat magic, lower implies higher priority.',
+                            'unsigned' => false,
+                        ],
+                        'columnName' => 'teampriority',
+                    ],
+                    'startTime' => [
+                        'fieldName' => 'startTime',
+                        'type' => 'decimal',
+                        'scale' => 9,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 32,
+                        'options' => [
+                            'comment' => 'Time started work',
+                            'unsigned' => true,
+                        ],
+                        'columnName' => 'starttime',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'queuetaskid' => 'queuetaskid',
+                    'jobid' => 'jobid',
+                    'priority' => 'priority',
+                    'teampriority' => 'teamPriority',
+                    'starttime' => 'startTime',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'queuetaskid' => 'queuetaskid',
+                    'jobid' => 'jobid',
+                    'priority' => 'priority',
+                    'teamPriority' => 'teampriority',
+                    'startTime' => 'starttime',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'queuetask',
+                    'indexes' => [
+                        'queuetaskid' => [
+                            'columns' => [
+                                'queuetaskid',
+                            ],
+                        ],
+                        'jobid' => [
+                            'columns' => [
+                                'jobid',
+                            ],
+                        ],
+                        'priority' => [
+                            'columns' => [
+                                'priority',
+                            ],
+                        ],
+                        'teampriority' => [
+                            'columns' => [
+                                'teampriority',
+                            ],
+                        ],
+                        'teamid' => [
+                            'columns' => [
+                                'teamid',
+                            ],
+                        ],
+                        'starttime' => [
+                            'columns' => [
+                                'starttime',
+                            ],
+                        ],
+                    ],
+                    'options' => [
+                        'collation' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                        'comment' => 'Work items.',
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'team' => [
+                        'fieldName' => 'team',
+                        'joinColumns' => [
+                            [
+                                'name' => 'teamid',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'teamid',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Team',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\QueueTask',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'teamid' => 'teamid',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

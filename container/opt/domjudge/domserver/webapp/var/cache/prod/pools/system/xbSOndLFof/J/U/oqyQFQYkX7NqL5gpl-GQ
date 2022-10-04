@@ -1,0 +1,3 @@
+<?php //App%255CEntity%255CExternalSourceWarning%2523setLastEventId
+
+return [PHP_INT_MAX, []];
